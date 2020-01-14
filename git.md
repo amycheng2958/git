@@ -27,7 +27,7 @@
 
 ## 分支管理
 
-* 添加分支：`git branch <branchname>`
+* 添加分支：`git branch <branchname>`,添加分支后切换到新分支，需要先commit，将新分支添加到远程仓库`git push --set-upstream origin`
 * 查看当前分支：`git branch`
 * 切换分支：`git checkout <branchname>`
 * 合并分支：`git checkout master`;`git merge <branchname>`
