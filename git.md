@@ -12,7 +12,9 @@
 * 删除本地仓库文件：`git rm <filename>`; `git commit -m 'delete'`
 
 ## 远程仓库
-
+* 配置邮箱：git config [--local|--global|--system]（--replace-all) user.email "790958649@qq.com"
+* 配置用户名：git config [--local|--global|--system]（--replace-all) user.name
+* 删除配置：git config [--local|--global|--system] --unset section.key
 * 生成SSH key：`ssh-keygen -t rsa -C "github邮箱"`,生成后的公钥在目录`~/.ssh`中的`id_rsa.pub`,复制后黏贴到github中`settings`中`SSH`,通过`ssh -T git@github.com`测试是否连通
 * 添加远程仓库: `git remote add origin <地址>`，远程库的名字就是origin；`git pull origin master，--allow-unrelated-histories`，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令;`git push -u origin master` 
 * 删除远程仓库：`git remote rm origin`
